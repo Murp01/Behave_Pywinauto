@@ -16,4 +16,4 @@ def step_impl2(context):
 
 @then('behave will test it for us!')
 def step_impl3(context):
-    assert context.failed is False
+    time.sleep(3)
