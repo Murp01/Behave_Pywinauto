@@ -6,7 +6,7 @@ import time
 @given('we have behave installed')
 def step_impl(context):
     Application(backend="uia").start('notepad.exe')
-    time.sleep(10)
+    time.sleep(5)
 
 
 @when('we implement a test')
