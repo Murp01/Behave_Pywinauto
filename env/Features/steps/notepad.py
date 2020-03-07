@@ -1,11 +1,11 @@
 from behave import given, when, then
-from pywinauto.application import Application
 import time
+from AppObjects import Notepad
 
 
 @given('we have behave installed')
 def step_impl(context):
-    Application(backend="uia").start('notepad.exe')
+    Notepad.start_notepad_app(context)
     time.sleep(5)
 
 
