@@ -11,7 +11,7 @@ def step_impl(context):
 
 @when('we implement a test')
 def step_impl2(context):
-    assert True is not False
+    time.sleep(2)
 
 
 @then('behave will test it for us!')
